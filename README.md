@@ -1,8 +1,8 @@
 # Thanksgiving App #
 
-This app shows a real time feed of Instagram images for that have the `#thanksgiving` tag.
+This app shows a real time feed of [Instagram](http://instagram.com) images that have the `#thanksgiving` tag.
 
-The feed is refreshewd in realtime using [sock.js](https://github.com/sockjs/sockjs-client) and consumers the Instagram Api.
+The feed is refreshewd in realtime using [sock.js](https://github.com/sockjs/sockjs-client) and consumes the Instagram Api.
 
 See it live here: [http://thanksgiving.cloudfoundry.com/](http://thanksgiving.cloudfoundry.com/).
 
