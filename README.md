@@ -31,4 +31,4 @@ See the LICENSE file.
 
 # Credits #
 
-[https://twitter.com/old_sound](@old_sound).
+[@old_sound](https://twitter.com/old_sound).
