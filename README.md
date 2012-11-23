@@ -11,7 +11,7 @@ __NOTE__ This application is not affiliated with Instagram. This is just a demo.
 # Deploying the App to Cloud Foundry #
 
 ```bash
-git clone
+git clone git://github.com/videlalvaro/thanksgiving.git
 cd thanksgiving
 vmc push --runtime node08
 ```
