@@ -1,0 +1,124 @@
+body {
+    padding: 50px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+span.when {
+    float: right;
+}
+
+.right {
+    float: right;
+}
+
+span.heart { margin-right: 2px; }
+ul.likes { list-style: none; margin: 0; padding: 0; }
+ul.likes li { display: inline; }
+ul.likes li:after { content: ","; }
+ul.likes li:last-child:after { content: ""; }
+
+.hidden {
+    display: none;
+}
+
+form.well {
+    float: right;
+}
+
+.countInfo {
+    float: left;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    background-color: #3A87AD;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    moz-border-radius: 3px;
+    webkit-border-radius: 3px;
+}
+
+div.box {
+    border-radius: 3px;
+    moz-border-radius: 3px;
+    webkit-border-radius: 3px;
+    border: 1px solid silver;
+    background-color: whiteSmoke;
+    padding: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.imageRow {
+    padding-bottom: 4px;
+}
+
+.imagebox {
+    border: 1px solid white;
+    background-color: silver;
+    border-radius: 3px;
+    moz-border-radius: 3px;
+    webkit-border-radius: 3px;
+    padding: 4px;
+    text-align: center;
+    float: left;
+    width: 230px;
+}
+
+img.userimage {
+    height: 225px;
+    width: 225px;
+}
+
+#image-list {
+    width: 1000px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.like-action {
+    text-align: right;
+    margin-top: 2px;
+}
+
+input[type=text], input[type=password]{
+    height: 2em;
+}
+
+.followMsg {
+    margin-right: 2em;
+}
+
+.follow {
+    float: right;
+}
+
+.profileLink {color:black;}
+
+.image-info {
+    margin-top: 4px;
+    border-radius: 3px;
+    moz-border-radius: 3px;
+    webkit-border-radius: 3px;
+    background-color: white;
+    padding-left: 4px;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 5em;
+    background-color: black;
+    color: white;
+}
+
+#no-pics {
+    text-align: center;
+}

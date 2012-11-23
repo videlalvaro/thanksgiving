@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <title>Happy Thanksigving!</title>
+    <link rel="stylesheet" media="screen" href="/stylesheets/normalize.css" >
+    <link rel="stylesheet" media="screen" href="/stylesheets/bootstrap.min.css" >
+    <link rel="stylesheet" media="screen" href="/stylesheets/style.css" >
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36535095-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+      <div class='navbar navbar-fixed-top'>
+        <div class="navbar-inner">
+          <div class='nav-collapse'>
+            <ul class="nav">
+              <li>
+                <a href="/">Happy Thanksgiving!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container content">
+        <div class="hero-unit">
+          <h1>Happy Thanksgiving!</h1>
+          <br />
+          <p>This demo app uses the <a href="http://instagram.com/developer/" target="_new">Instagram Api</a> to
+            show the latest images taged as <strong>#thanksgiving</strong></p>
+        </div>
+        <div class="row">
+          <div id="image-list">
+            <% if (data && data.length > 0) { %>
+            <% data.forEach(function(image, i) { %>
+            <% if (i < 12) { %>
+            <div id="box-<%= image.id %>" class="imagebox">
+              <div>
+                <a href="<%= image.link %>" target="_new"><img class="userimage" src="<%= image.images.thumbnail.url %>"></a>
+              </div>
+            </div>
+            <% } %>
+            <% }) %>
+            <% } else { %>
+            <div id="no-pics"><span class="label label-info">No pictures to show. Happy Thanksgiving!</span></div>
+            <% } %>
+          </div>
+        </div>
+        <div class="row">
+          <div id="copyright">
+            <span>Copyright 2012 - <a href="https://twitter.com/#!/old_sound">Alvaro Videla</a> - Images shown here belong to <a href="http://instagram.com">Instagram</a> and its users.</span>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+      <script type="text/javascript" src="/javascripts/jquery.timeago.js"></script>
+      <script type="text/javascript" src="/javascripts/jquery.masonry.min.js"></script>
+      <script type="text/javascript" src="/javascripts/sockjs-0.3.4.min.js"></script>
+      <script type="text/javascript" src="/javascripts/livestream.js"></script>
+      <script type="text/javascript" src="/javascripts/thanksgiving.js"></script>
+  </body>
+</html>
